@@ -1,0 +1,15 @@
+include:
+  - https://salsa.debian.org/salsa-ci-team/pipeline/raw/master/salsa-ci.yml
+  - https://salsa.debian.org/salsa-ci-team/pipeline/raw/master/pipeline-jobs.yml
+
+variables:
+  RELEASE: 'stable'
+  GIT_DEPTH: 50
+  SALSA_CI_DISABLE_BUILD_DBGSYM: 1
+  SALSA_CI_DISABLE_VERSION_BUMP: 1
+  SALSA_CI_DISABLE_BUILD_PACKAGE_I386: 1
+  SALSA_CI_DISABLE_BUILD_PACKAGE_ARMHF: 1
+  SALSA_CI_DISABLE_CROSSBUILD_ARM64: 1
+  SALSA_CI_DISABLE_BUILD_PACKAGE_ARM64: 1
+  # SALSA_CI_EXTRA_REPOSITORY: "deb http://kaermorn.rfc2549.network/cyware lory main contrib non-free non-free-firmware"
+  # SALSA_CI_EXTRA_REPOSITORY_KEY: "http://kaermorn.rfc2549.network/cyware/staging-key.pgp"
